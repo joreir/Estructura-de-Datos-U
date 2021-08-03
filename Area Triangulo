@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-	int Jose,Reinaldo;
+	float Jose,Reinaldo;
 	cin>>Jose>>Reinaldo;
 	cout<<Jose*Reinaldo/2<<endl;
 	return 0;
