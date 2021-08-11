@@ -1,0 +1,106 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+   int a,b,r,opcion;
+   do {
+     cout << endl;
+     
+     cout << "1.- Areas" << endl;
+     cout << "2.- Series" << endl;
+     cout << "3.- Operaciones aritmeticas" << endl;
+     
+     cout << "Elige una opción:";
+     
+     cin >> opcion;
+    
+     switch (opcion) {
+     	
+	    case 1:
+	    	 cout << endl;
+     
+     		cout << "1.- Area Triangulo" << endl;
+     		cout << "2.- Area Cuadrado" << endl;
+    		cout << "3.- Area circulo" << endl;
+     		cout << "Elige una opción:";
+     		cin >> opcion;
+	    switch (opcion) {
+	    	
+			case 1:
+			cout<<"Ingrese la base ";
+			cin>>b;
+			cout<<"Ingrese la altura ";
+			cin>>a;
+			cout<<"El area es "<<endl;
+			cout<<b*a/2<<endl;	
+			break;
+	    	case 2: 
+	       cout<<"Ingrese el lado ";
+			cin>>b;
+		
+			cout<<"El area es "<<endl;
+			cout<<b*b<<endl;	
+			break;
+			cout<<"Ingrese el radio ";
+	    	cin>>a;
+	    	cout<<"El area es "<<endl;
+			cout<<3.1416*(a*a)<<endl;
+	    	break;
+	        default: cout <<"Opcion invalida"<< endl;
+      	
+        }	
+		break;
+	    case 2: 
+	     cout << endl;
+     
+     		cout << "1.- Serie de impares" << endl;
+     		cout << "2.- Serie de pares" << endl;
+     		cout << "Elige una opción:";
+     		cin >> opcion;
+     		cout<<"La serie es "<<endl;
+	        switch (opcion) {
+	    	
+			case 1:
+			for(int i=1;i<=10;i+=2){
+				cout<<i<<endl;
+			}	
+			break;
+	    	case 2: 
+	    	for(int i=0;i<=10;i+=2){
+				cout<<i<<endl;
+			}	
+			break;
+	    
+	        default: cout <<"Opcion invalida"<< endl;
+      	
+           }	
+		break;
+	    case 3: 
+	    cout << endl;
+    	cout << "1.- Suma" << endl;
+    	cout << "2.- Resta" << endl;
+     	cout << "3.- Producto" << endl;
+     	cout << "4.- División" << endl;
+     	cout << "0.- Salir" << endl;
+     	cout << "Elige una opción: " ;
+     	cin >> opcion;
+     	 cout << "Ingrese a: " ;
+         cin >> a;
+        cout << "Ingrese b: " ;
+        cin >> b;
+     switch (opcion) {
+	    case 1: r = a + b; break;
+	    case 2: r = a - b; break;
+	    case 3: r = a * b; break;
+	    case 4: r = a / b; break;
+		case 0: cout << "Salir";break;
+	    default: cout << "Opcion invalida" << endl;
+     }
+       cout<<"El resultado de la operacion aritmetica es "<<r<<endl;
+	    break;
+	    default: cout << "Opcion invalida" << endl;
+     }
+    
+   } while (opcion != 0);
+
+}
