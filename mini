@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int mini(int a,int b);
+
+int main() {
+	int a,b;
+	cin>>a>>b;
+	cout<<mini(a,b)<<endl;
+	return 0;
+}
+
+int mini(int a,int b){
+	if(a>b){
+		return b;
+	}
+	else
+	 return a;
+}
